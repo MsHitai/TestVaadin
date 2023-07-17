@@ -18,7 +18,7 @@ public class MainView extends VerticalLayout {
 
         NumberField field = new NumberField("Enter a number here");
         add(field);
-        MyNumber number = new MyNumber(1, 0);
+        MyNumber number = new MyNumber();
         Button incrementButton = new Button("Increment", e -> field.setValue(field.getValue() + 1));
 
         add(incrementButton);
